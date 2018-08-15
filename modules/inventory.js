@@ -10,6 +10,10 @@ module.exports = (apiKey) => {
         },
         Deposit: (items) => {
             return opRequest.make('IInventory/Deposit/v1', { items: JSON.stringify(items) }, 'post');
-        }
+        },
+        TransferToTradeSite: (items) => {
+            return opRequest.make('IInventory/TransferToTradeSite/v1', { items: items.join(',') }, 'post');
+        },
+
     }
 };

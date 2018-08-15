@@ -192,7 +192,18 @@ Output:
      * `market_name` The name of this item
      * `price` The list price of this item in USD cents (typically set to $99,999.99)
      * `addons` An array containing strings for each addon this item has
-     
+ 
+## <a name='TransferToTradeSite'>TransferToTradeSite(`string` items)</a>
+
+Input:
+
+ * `items` array of item IDs. Must be items in your OPSkins inventory.
+ 
+Output:
+
+ * `items` An array of objects transferred:
+    
+    
 # <a name='pricing-methods'>Pricing</a>
 
 !! These methods are used accessing the 'Pricing' property !!
